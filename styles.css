@@ -31,16 +31,16 @@ button {
 padding: 10px 20px;
 font-size: 16px;
 margin-top: 10px;
-background-color: #007bff;
-border-color: #007bff;
+background-color: #a64c2b;
+border-color: #be471c;
 color: #fff;
 border-radius: 5px;
 cursor: pointer;
 }
 
 button:hover {
-background-color: #0069d9;
-border-color: #0062cc;
+background-color: #7e1d1d;
+border-color: #7e1d1d;
 color: #fff;
 }
 
@@ -58,6 +58,11 @@ outline: none;
 box-shadow: 0 0 5px #007bff;
 border-color: #007bff;
 }
+.backImageCard{
+background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://cdn.discordapp.com/attachments/232538205583441920/1113123069716865154/old-paper-texture-background-free-photo.jpg') no-repeat center center;
+background-size: cover;
+color:rgb(95, 197, 240)
+}
 nav {
 background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://cdn.discordapp.com/attachments/232538205583441920/1113123069716865154/old-paper-texture-background-free-photo.jpg') no-repeat center center;
 background-size: cover;
@@ -67,6 +72,12 @@ justify-content: space-between;
 align-items: center;
 padding: 20px;
 }
+.background-image {
+    background-image:linear-gradient(to bottom, rgba(84, 25, 25, 0.7), rgba(126, 118, 118, 0.9)), url('https://cdn.discordapp.com/attachments/232538205583441920/1113123069716865154/old-paper-texture-background-free-photo.jpg') /* Replace 'your-image-url' with the URL of your background image */;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
 
 nav a {
 color: #fff;

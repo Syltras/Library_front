@@ -14,23 +14,23 @@
     
 </head>
 
-<body>
+<body class='background-image' style="color:aliceblue">
     <!-- Add Bootstrap navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Library Management System</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="btn btn-primary mx-2" onclick="showBooks()">Show Books Data</button>
+            <button class="button button:hover mx-2" onclick="showBooks()">Show Books Data</button>
           </li>
           <li class="nav-item">
-            <button class="btn btn-primary mx-2" onclick="showCustomers()">Show Customers Data</button>
+            <button class="button button:hover mx-2" onclick="showCustomers()">Show Customers Data</button>
           </li>
           <li class="nav-item">
-            <button class="btn btn-primary mx-2" onclick="showLoans()">Show Loans Data</button>
+            <button class="button button:hover mx-2" onclick="showLoans()">Show Loans Data</button>
           </li>
           <li class="nav-item">
-            <button class="btn btn-primary mx-2" id="show-overdue-books-btn">Show Overdue Books</button>
+            <button class="button button:hover mx-2" id="show-overdue-books-btn">Show Overdue Books</button>
           </li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card mb-4 backImageCard">
             <div class="card-body">
               <h1>Books</h1>
               <hr />
@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group row">
                   <label for="book_type" class="col-sm-3 col-form-label">Book Type</label>
-                  <div class="col-sm-9">
+                  <div class="col-sm-9 ">
                     <select class="form-control" id="book_type" style="width: 100%;">
                       <option value="1">Type 1</option>
                       <option value="2">Type 2</option>
@@ -72,14 +72,14 @@
                     </select>
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="newBook()">Add New Book</button>
+                <button type="button" class="button button:hover" onclick="newBook()">Add New Book</button>
               </form>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
+        <div class="col-md-6 ">
+          <div class="card mb-4 backImageCard">
+            <div class="card-body ">
               <h1>Customers</h1>
               <hr />
               <form>
@@ -101,13 +101,13 @@
                     <input type="text" class="form-control" id="cust_age" style="width: 100%;">
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="newCustomer()">Add New Customer</button>
+                <button type="button" class="button button:hover" onclick="newCustomer()">Add New Customer</button>
               </form>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card mb-4 backImageCard">
             <div class="card-body">
               <h1>Loans</h1>
               <hr />
@@ -124,13 +124,13 @@
                     <input type="text" class="form-control" id="loan_book_id" style="width: 100%;">
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="newLoan()" id="loanBtn">Add New Loan</button>
+                <button type="button" class="button button:hover" onclick="newLoan()" id="loanBtn">Add New Loan</button>
               </form>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card mb-4 backImageCard ">
             <div class="card-body">
               <div id="BooksSection">
                 <div id="BooksSection">
@@ -151,9 +151,9 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-4 card-height">
+            <div class="card mb-4 card-height backImageCard">
               <div class="card-body">
-                <h1>Hello</h1>
+                <h1>Show Data</h1>
                 <hr />
                   <div class="scrollable-content">
                     <div class="right-section">
